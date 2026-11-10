@@ -12,6 +12,20 @@
       "id" : 1, "name" : "user_key", "required" : false, "type" : "long"
     }, {
       "id" : 2, "name" : "user_id", "required" : false, "type" : "string"
+    }, {
+      "id" : 3, "name" : "username", "required" : false, "type" : "string"
+    }, {
+      "id" : 4, "name" : "name", "required" : false, "type" : "string"
+    }, {
+      "id" : 5, "name" : "sex", "required" : false, "type" : "string"
+    }, {
+      "id" : 6, "name" : "birthdate", "required" : false, "type" : "date"
+    }, {
+      "id" : 7, "name" : "city", "required" : false, "type" : "string"
+    }, {
+      "id" : 8, "name" : "state", "required" : false, "type" : "string"
+    }, {
+      "id" : 9, "name" : "zip_code", "required" : false, "type" : "string"
     } ]
   } ],
   "current-snapshot-id" : 4001,

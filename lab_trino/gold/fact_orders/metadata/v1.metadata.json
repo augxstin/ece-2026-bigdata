@@ -17,7 +17,9 @@
     }, {
       "id" : 4, "name" : "date_key", "required" : false, "type" : "int"
     }, {
-      "id" : 5, "name" : "quantity", "required" : false, "type" : "int"
+      "id" : 5, "name" : "ordered_at", "required" : false, "type" : "timestamptz"
+    }, {
+      "id" : 6, "name" : "quantity", "required" : false, "type" : "int"
     } ]
   } ],
   "current-snapshot-id" : 3001,
