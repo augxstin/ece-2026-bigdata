@@ -1,0 +1,29 @@
+﻿{
+  "format-version" : 2,
+  "table-uuid" : "a1b2c3d4-e5f6-7890-1234-56789abcdef0",
+  "location" : "s3a://warehouse/gold/fact_orders",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1728384000000,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1, "name" : "order_id", "required" : false, "type" : "string"
+    }, {
+      "id" : 2, "name" : "user_key", "required" : false, "type" : "long"
+    }, {
+      "id" : 3, "name" : "product_key", "required" : false, "type" : "long"
+    }, {
+      "id" : 4, "name" : "date_key", "required" : false, "type" : "int"
+    }, {
+      "id" : 5, "name" : "quantity", "required" : false, "type" : "int"
+    } ]
+  } ],
+  "current-snapshot-id" : 3001,
+  "snapshots" : [ {
+    "snapshot-id" : 3001,
+    "timestamp-ms" : 1728384000000,
+    "summary" : { "operation" : "append" }
+  } ]
+}

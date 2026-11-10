@@ -1,0 +1,23 @@
+﻿{
+  "format-version" : 2,
+  "table-uuid" : "f9e8d7c6-b5a4-3210-9876-54321fedcba0",
+  "location" : "s3a://warehouse/gold/dim_user",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1728384000000,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1, "name" : "user_key", "required" : false, "type" : "long"
+    }, {
+      "id" : 2, "name" : "user_id", "required" : false, "type" : "string"
+    } ]
+  } ],
+  "current-snapshot-id" : 4001,
+  "snapshots" : [ {
+    "snapshot-id" : 4001,
+    "timestamp-ms" : 1728384000000,
+    "summary" : { "operation" : "append" }
+  } ]
+}
