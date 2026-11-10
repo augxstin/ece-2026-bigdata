@@ -1,0 +1,23 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "b2c3d4e5-f6a7-8901-2345-67890abcdef1",
+  "location" : "s3a://warehouse/gold/dim_product",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1728384000000,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1, "name" : "product_key", "required" : false, "type" : "long"
+    }, {
+      "id" : 2, "name" : "product", "required" : false, "type" : "string"
+    } ]
+  } ],
+  "current-snapshot-id" : 5001,
+  "snapshots" : [ {
+    "snapshot-id" : 5001,
+    "timestamp-ms" : 1728384000000,
+    "summary" : { "operation" : "append" }
+  } ]
+}
