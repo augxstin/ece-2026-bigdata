@@ -1,1 +1,66 @@
-{"format-version":2,"table-uuid":"744ff494-a556-48bd-b831-decfdfc65488","location":"s3a://user-a-polette-ece/warehouse/silver/users","last-sequence-number":1,"last-updated-ms":1794218308468,"last-column-id":11,"current-schema-id":1,"schemas":[{"type":"struct","schema-id":0,"fields":[{"id":1,"name":"user_id","required":false,"type":"string"},{"id":2,"name":"username","required":false,"type":"string"},{"id":3,"name":"name","required":false,"type":"string"},{"id":4,"name":"sex","required":false,"type":"string"},{"id":5,"name":"email","required":false,"type":"string"},{"id":6,"name":"birthdate","required":false,"type":"date"},{"id":7,"name":"street","required":false,"type":"string"},{"id":8,"name":"city","required":false,"type":"string"},{"id":9,"name":"state","required":false,"type":"string"},{"id":10,"name":"zip_code","required":false,"type":"string"}]},{"type":"struct","schema-id":1,"fields":[{"id":1,"name":"user_id","required":false,"type":"string"},{"id":2,"name":"username","required":false,"type":"string"},{"id":3,"name":"name","required":false,"type":"string"},{"id":4,"name":"sex","required":false,"type":"string"},{"id":5,"name":"email","required":false,"type":"string"},{"id":6,"name":"birthdate","required":false,"type":"date"},{"id":7,"name":"street","required":false,"type":"string"},{"id":8,"name":"city","required":false,"type":"string"},{"id":9,"name":"state","required":false,"type":"string"},{"id":10,"name":"zip_code","required":false,"type":"string"},{"id":11,"name":"country","required":false,"type":"string"}]}],"default-spec-id":0,"partition-specs":[{"spec-id":0,"fields":[]}],"last-partition-id":999,"default-sort-order-id":0,"sort-orders":[{"order-id":0,"fields":[]}],"properties":{"owner":"onyxia","write.parquet.compression-codec":"zstd"},"current-snapshot-id":8458105527261922391,"refs":{"main":{"snapshot-id":8458105527261922391,"type":"branch"}},"snapshots":[{"sequence-number":1,"snapshot-id":8458105527261922391,"timestamp-ms":1794217395048,"summary":{"operation":"overwrite","spark.app.id":"local-1794217247964","manifests-created":"1","manifests-kept":"0","manifests-replaced":"0","added-data-files":"1","added-records":"50","added-files-size":"7435","changed-partition-count":"1","total-records":"50","total-files-size":"7435","total-data-files":"1","total-delete-files":"0","total-position-deletes":"0","total-equality-deletes":"0","engine-version":"4.1.1","app-id":"local-1794217247964","engine-name":"spark","iceberg-version":"Apache Iceberg 1.11.0 (commit 6976e020b894f6a6777704df2b8c4458cb291ae9)","app-name":"lab-silver-pyspark"},"manifest-list":"s3a://user-a-polette-ece/warehouse/silver/users/metadata/snap-8458105527261922391-1-cfdcf5f0-39f8-44ff-8265-257ff221f90b.avro","schema-id":0}],"statistics":[],"partition-statistics":[],"snapshot-log":[{"timestamp-ms":1794217395048,"snapshot-id":8458105527261922391}],"metadata-log":[{"timestamp-ms":1794217395060,"metadata-file":"s3a://user-a-polette-ece/warehouse/silver/users/metadata/v1.metadata.json"}]}
+﻿{
+  "format-version" : 2,
+  "table-uuid" : "e912ab01-7b33-4f22-8d99-112233445566",
+  "location" : "s3a://warehouse/silver/users",
+  "last-sequence-number" : 2,
+  "last-updated-ms" : 1728383000000,
+  "last-column-id" : 4,
+  "current-schema-id" : 1,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "user_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    } ]
+  }, {
+    "type" : "struct",
+    "schema-id" : 1,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "user_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "name",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "country",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : { },
+  "current-snapshot-id" : 2001,
+  "snapshots" : [ {
+    "snapshot-id" : 2001,
+    "timestamp-ms" : 1728383000000,
+    "summary" : {
+      "operation" : "create"
+    },
+    "manifest-list" : "s3a://warehouse/silver/users/metadata/snap-2001-1.avro"
+  } ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1728383000000,
+    "snapshot-id" : 2001
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1728382900000,
+    "metadata-file" : "s3a://warehouse/silver/users/metadata/v1.metadata.json"
+  } ]
+}

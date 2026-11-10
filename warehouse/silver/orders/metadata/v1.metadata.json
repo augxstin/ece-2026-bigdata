@@ -1,1 +1,58 @@
-{"format-version":2,"table-uuid":"f881ee34-1bdf-443b-a79d-f7b44518ec41","location":"s3a://user-a-polette-ece/warehouse/silver/orders","last-sequence-number":1,"last-updated-ms":1794217397775,"last-column-id":5,"current-schema-id":0,"schemas":[{"type":"struct","schema-id":0,"fields":[{"id":1,"name":"order_id","required":false,"type":"string"},{"id":2,"name":"user_id","required":false,"type":"string"},{"id":3,"name":"ordered_at","required":false,"type":"timestamptz"},{"id":4,"name":"quantity","required":false,"type":"int"},{"id":5,"name":"product","required":false,"type":"string"}]}],"default-spec-id":0,"partition-specs":[{"spec-id":0,"fields":[]}],"last-partition-id":999,"default-sort-order-id":0,"sort-orders":[{"order-id":0,"fields":[]}],"properties":{"owner":"onyxia","write.parquet.compression-codec":"zstd"},"current-snapshot-id":6418145797776216869,"refs":{"main":{"snapshot-id":6418145797776216869,"type":"branch"}},"snapshots":[{"sequence-number":1,"snapshot-id":6418145797776216869,"timestamp-ms":1794217397775,"summary":{"operation":"overwrite","spark.app.id":"local-1794217247964","manifests-created":"1","manifests-kept":"0","manifests-replaced":"0","added-data-files":"1","added-records":"2829","added-files-size":"84055","changed-partition-count":"1","total-records":"2829","total-files-size":"84055","total-data-files":"1","total-delete-files":"0","total-position-deletes":"0","total-equality-deletes":"0","engine-version":"4.1.1","app-id":"local-1794217247964","engine-name":"spark","iceberg-version":"Apache Iceberg 1.11.0 (commit 6976e020b894f6a6777704df2b8c4458cb291ae9)","app-name":"lab-silver-pyspark"},"manifest-list":"s3a://user-a-polette-ece/warehouse/silver/orders/metadata/snap-6418145797776216869-1-2353ecc8-0023-404f-8c9d-28eae3a928aa.avro","schema-id":0}],"statistics":[],"partition-statistics":[],"snapshot-log":[{"timestamp-ms":1794217397775,"snapshot-id":6418145797776216869}],"metadata-log":[]}
+﻿{
+  "format-version" : 2,
+  "table-uuid" : "c82f91a2-4a11-4b12-9c12-3847abef1021",
+  "location" : "s3a://warehouse/silver/orders",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1728382364000,
+  "last-column-id" : 3,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "order_id",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "quantity",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 3,
+      "name" : "product",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 1001,
+  "snapshots" : [ {
+    "snapshot-id" : 1001,
+    "timestamp-ms" : 1728382364000,
+    "summary" : {
+      "operation" : "append",
+      "added-records" : "5000"
+    },
+    "manifest-list" : "s3a://warehouse/silver/orders/metadata/snap-1001-1.avro"
+  } ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1728382364000,
+    "snapshot-id" : 1001
+  } ],
+  "metadata-log" : [ ]
+}
