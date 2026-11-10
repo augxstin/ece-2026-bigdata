@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "ece-2026-bigdata"
 version = "0.1.0"
 description = "Big Data labs repository - ECE 2026"
